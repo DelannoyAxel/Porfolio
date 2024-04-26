@@ -436,13 +436,17 @@ header #stars::before {
   color: white;
   text-align: center;
 }
-.sectionProjet .containerProjet .containerProjet1 a {
+.sectionProjet .containerProjet .containerProjet1 #btnModal1 {
   text-decoration: none;
   color: #000000;
   text-align: center;
 }
-.sectionProjet .containerProjet .containerProjet1 a i {
+.sectionProjet .containerProjet .containerProjet1 #btnModal1 i {
   font-size: 13px;
+}
+.sectionProjet .containerProjet .containerProjet1 dialog {
+  width: 35vw;
+  height: 40vh;
 }
 .sectionProjet .containerProjet .containerProjet2 {
   width: 35%;
@@ -468,13 +472,18 @@ header #stars::before {
   color: white;
   text-align: center;
 }
-.sectionProjet .containerProjet .containerProjet2 a {
+.sectionProjet .containerProjet .containerProjet2 #btnModal2 {
   text-decoration: none;
   color: #000000;
   text-align: center;
 }
-.sectionProjet .containerProjet .containerProjet2 a i {
+.sectionProjet .containerProjet .containerProjet2 #btnModal2 i {
   font-size: 13px;
+}
+.sectionProjet .containerProjet .containerProjet2 dialog {
+  width: 35%;
+  height: 40%;
+  background-color: pink;
 }
 .sectionProjet .contact {
   display: flex;
