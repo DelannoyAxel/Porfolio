@@ -325,7 +325,7 @@ header #stars::before {
 }
 .about h2 {
   padding: 2% 0% 5% 0%;
-  font-size: 6.5vw;
+  font-size: 5.7vw;
   background: -webkit-linear-gradient(#F9815B, #FFA571);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -345,7 +345,7 @@ header #stars::before {
 .Competences h2 {
   color: white;
   text-align: left;
-  font-size: 6.5vw;
+  font-size: 5.7vw;
   font-style: italic;
   background: -webkit-linear-gradient(#F9815B, #FFA571);
   -webkit-background-clip: text;
@@ -394,6 +394,7 @@ header #stars::before {
   flex-direction: column;
   height: auto;
   margin: 0px 10%;
+  position: relative;
 }
 .sectionProjet h1 {
   width: 100%;
@@ -401,7 +402,7 @@ header #stars::before {
   background: linear-gradient(to right, #F9815B, #FFA571);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 6.5vw;
+  font-size: 5.7vw;
   font-style: italic;
   border-bottom: 2px solid white;
   margin-top: 5%;
@@ -412,7 +413,8 @@ header #stars::before {
   justify-content: center;
   flex-wrap: wrap;
 }
-.sectionProjet .containerProjet .containerProjet1 {
+.sectionProjet .containerProjet1,
+.sectionProjet .containerProjet2 {
   width: 35%;
   min-width: 425px;
   height: 45vh;
@@ -424,66 +426,151 @@ header #stars::before {
   border-radius: 10px;
   align-items: center;
   justify-content: center;
+  position: relative;
+  /* Ajouter cette ligne */
 }
-.sectionProjet .containerProjet .containerProjet1 img {
+.sectionProjet .containerProjet1 img,
+.sectionProjet .containerProjet2 img {
   width: 95%;
   padding-bottom: 3%;
   border-radius: 10px;
   min-width: 400px;
   height: 30vh;
 }
-.sectionProjet .containerProjet .containerProjet1 h2 {
+.sectionProjet .containerProjet1 h2,
+.sectionProjet .containerProjet2 h2 {
   color: white;
   text-align: center;
 }
-.sectionProjet .containerProjet .containerProjet1 #btnModal1 {
+.sectionProjet .btnModal {
+  cursor: pointer;
   text-decoration: none;
   color: #000000;
   text-align: center;
 }
-.sectionProjet .containerProjet .containerProjet1 #btnModal1 i {
-  font-size: 13px;
-}
-.sectionProjet .containerProjet .containerProjet1 dialog {
+.sectionProjet #modal1,
+.sectionProjet #modal2 {
+  position: absolute;
+  top: 55%;
+  /* Modifier la position pour centrer le modal */
+  left: 50%;
+  /* Modifier la position pour centrer le modal */
+  transform: translate(-50%, -50%);
   width: 35vw;
-  height: 40vh;
+  height: 50%;
+  background-color: #050505;
+  border-radius: 35px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  display: none;
+  z-index: 9999;
 }
-.sectionProjet .containerProjet .containerProjet2 {
-  width: 35%;
-  min-width: 425px;
-  height: 45vh;
-  margin-top: 10%;
-  border-radius: 15px;
+.sectionProjet .modal1 div {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, #F9815B, #FFA571);
-  border-radius: 10px;
+  justify-content: flex-end;
 }
-.sectionProjet .containerProjet .containerProjet2 img {
-  width: 95%;
-  padding-bottom: 3%;
-  border-radius: 10px;
-  min-width: 400px;
-  height: 30vh;
+.sectionProjet .modal1 div i {
+  color: white;
+  font-size: 2vw;
+  cursor: pointer;
 }
-.sectionProjet .containerProjet .containerProjet2 h2 {
+.sectionProjet .modal1 div i:hover {
+  color: #FFA571;
+}
+.sectionProjet .modal1 h2 {
   color: white;
   text-align: center;
+  font-size: 3vw;
 }
-.sectionProjet .containerProjet .containerProjet2 #btnModal2 {
+.sectionProjet .modal1 h3 {
+  font-size: 1.5vw;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 5vh;
+}
+.sectionProjet .modal1 h4 {
+  font-size: 1.3vw;
+  color: white;
+  padding-bottom: 2vh;
+  font-style: italic;
+}
+.sectionProjet .modal1 p {
+  color: white;
+  font-size: 0.95vw;
+  padding-bottom: 4vh;
+}
+.sectionProjet .modal1 a {
   text-decoration: none;
-  color: #000000;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.8vw;
+}
+.sectionProjet .modal1 a i {
+  font-size: 0.5vw;
   text-align: center;
 }
-.sectionProjet .containerProjet .containerProjet2 #btnModal2 i {
-  font-size: 13px;
+.sectionProjet .modal1 a:hover {
+  color: #FFA571;
 }
-.sectionProjet .containerProjet .containerProjet2 dialog {
-  width: 35%;
-  height: 40%;
-  background-color: pink;
+.sectionProjet .modal2 div {
+  display: flex;
+  justify-content: flex-end;
+}
+.sectionProjet .modal2 div i {
+  color: white;
+  font-size: 2vw;
+  cursor: pointer;
+}
+.sectionProjet .modal2 div i:hover {
+  color: #FFA571;
+}
+.sectionProjet .modal2 h2 {
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+}
+.sectionProjet .modal2 h3 {
+  font-size: 1.5vw;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 5vh;
+}
+.sectionProjet .modal2 h4 {
+  font-size: 1.3vw;
+  color: white;
+  padding-bottom: 2vh;
+  font-style: italic;
+}
+.sectionProjet .modal2 p {
+  color: white;
+  font-size: 0.95vw;
+  padding-bottom: 4vh;
+}
+.sectionProjet .modal2 a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.8vw;
+}
+.sectionProjet .modal2 a i {
+  font-size: 0.5vw;
+  text-align: center;
+}
+.sectionProjet .modal2 a:hover {
+  color: #FFA571;
+}
+.sectionProjet .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9998;
+  display: none;
 }
 .sectionProjet .contact {
   display: flex;
@@ -657,11 +744,56 @@ footer {
     font-size: 6em;
     color: white;
   }
+  .sectionProjet .containerProjet #modal1,
+  .sectionProjet .containerProjet #modal2 {
+    width: 60vw;
+    height: 60vh;
+  }
+  .sectionProjet .containerProjet #modal1 div i,
+  .sectionProjet .containerProjet #modal2 div i {
+    font-size: 3.5vw;
+  }
+  .sectionProjet .containerProjet #modal1 p,
+  .sectionProjet .containerProjet #modal2 p {
+    font-size: 1.7vw;
+  }
+  .sectionProjet .containerProjet #modal1 h2,
+  .sectionProjet .containerProjet #modal2 h2 {
+    font-size: 4vw;
+  }
+  .sectionProjet .containerProjet #modal1 h3,
+  .sectionProjet .containerProjet #modal2 h3 {
+    font-size: 2vw;
+  }
+  .sectionProjet .containerProjet #modal1 h4,
+  .sectionProjet .containerProjet #modal2 h4 {
+    font-size: 2.1vw;
+  }
+  .sectionProjet .containerProjet #modal1 a,
+  .sectionProjet .containerProjet #modal2 a {
+    font-size: 1.3vw;
+  }
+  .sectionProjet .containerProjet #modal1 {
+    position: absolute;
+    top: 30%;
+  }
+  .sectionProjet .containerProjet #modal2 {
+    position: absolute;
+    top: 69%;
+  }
   .sectionProjet .containerProjet .containerProjet1 {
-    width: 60%;
+    width: 60vw;
+    height: 50vh;
+  }
+  .sectionProjet .containerProjet .containerProjet1 img {
+    height: 37vh;
   }
   .sectionProjet .containerProjet .containerProjet2 {
-    width: 60%;
+    width: 60vw;
+    height: 50vh;
+  }
+  .sectionProjet .containerProjet .containerProjet2 img {
+    height: 37vh;
   }
 }
 /* Pour les petits écrans (tablette) */
@@ -918,6 +1050,49 @@ footer {
     background: -webkit-linear-gradient(#F9815B, #FFA571);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .sectionProjet .containerProjet #modal1,
+  .sectionProjet .containerProjet #modal2 {
+    width: 75vw;
+    height: 50vh;
+  }
+  .sectionProjet .containerProjet #modal1 div i,
+  .sectionProjet .containerProjet #modal2 div i {
+    font-size: 4vw;
+  }
+  .sectionProjet .containerProjet #modal1 p,
+  .sectionProjet .containerProjet #modal2 p {
+    font-size: 1.7vw;
+  }
+  .sectionProjet .containerProjet #modal1 h2,
+  .sectionProjet .containerProjet #modal2 h2 {
+    font-size: 4vw;
+  }
+  .sectionProjet .containerProjet #modal1 h3,
+  .sectionProjet .containerProjet #modal2 h3 {
+    font-size: 2vw;
+  }
+  .sectionProjet .containerProjet #modal1 h4,
+  .sectionProjet .containerProjet #modal2 h4 {
+    font-size: 2.1vw;
+  }
+  .sectionProjet .containerProjet #modal1 a,
+  .sectionProjet .containerProjet #modal2 a {
+    font-size: 1.3vw;
+  }
+  .sectionProjet .containerProjet #modal1 {
+    position: absolute;
+    top: 26.5%;
+  }
+  .sectionProjet .containerProjet #modal2 {
+    position: absolute;
+    top: 67%;
+  }
+  .sectionProjet .containerProjet .containerProjet1 {
+    width: 70vw;
+  }
+  .sectionProjet .containerProjet .containerProjet2 {
+    width: 70vw;
   }
 }
 /* Pour les petits écrans (smartphone) */
@@ -1212,6 +1387,44 @@ footer {
     font-size: 3rem;
     color: white;
   }
+  .sectionProjet .containerProjet #modal1,
+  .sectionProjet .containerProjet #modal2 {
+    width: 80vw;
+    height: 37vh;
+  }
+  .sectionProjet .containerProjet #modal1 div i,
+  .sectionProjet .containerProjet #modal2 div i {
+    font-size: 3.8vw;
+  }
+  .sectionProjet .containerProjet #modal1 p,
+  .sectionProjet .containerProjet #modal2 p {
+    font-size: 2.2vw;
+    padding-bottom: 1vh;
+  }
+  .sectionProjet .containerProjet #modal1 h2,
+  .sectionProjet .containerProjet #modal2 h2 {
+    font-size: 4.5vw;
+  }
+  .sectionProjet .containerProjet #modal1 h3,
+  .sectionProjet .containerProjet #modal2 h3 {
+    font-size: 2.5vw;
+  }
+  .sectionProjet .containerProjet #modal1 h4,
+  .sectionProjet .containerProjet #modal2 h4 {
+    font-size: 2.7vw;
+  }
+  .sectionProjet .containerProjet #modal1 a,
+  .sectionProjet .containerProjet #modal2 a {
+    font-size: 1.8vw;
+  }
+  .sectionProjet .containerProjet #modal1 {
+    position: absolute;
+    top: 25%;
+  }
+  .sectionProjet .containerProjet #modal2 {
+    position: absolute;
+    top: 63%;
+  }
   .sectionProjet .containerProjet .containerProjet1 {
     width: 60%;
     min-width: 325px;
@@ -1246,6 +1459,44 @@ footer {
     color: white;
     transition: 0.2s ease-in-out;
     font-size: 2rem;
+  }
+  .sectionProjet .containerProjet #modal1,
+  .sectionProjet .containerProjet #modal2 {
+    width: 82vw;
+    height: 37vh;
+  }
+  .sectionProjet .containerProjet #modal1 div i,
+  .sectionProjet .containerProjet #modal2 div i {
+    font-size: 3.5vw;
+  }
+  .sectionProjet .containerProjet #modal1 p,
+  .sectionProjet .containerProjet #modal2 p {
+    font-size: 2.8vw;
+    padding-bottom: 1vh;
+  }
+  .sectionProjet .containerProjet #modal1 h2,
+  .sectionProjet .containerProjet #modal2 h2 {
+    font-size: 6vw;
+  }
+  .sectionProjet .containerProjet #modal1 h3,
+  .sectionProjet .containerProjet #modal2 h3 {
+    font-size: 3vw;
+  }
+  .sectionProjet .containerProjet #modal1 h4,
+  .sectionProjet .containerProjet #modal2 h4 {
+    font-size: 3vw;
+  }
+  .sectionProjet .containerProjet #modal1 a,
+  .sectionProjet .containerProjet #modal2 a {
+    font-size: 2.5vw;
+  }
+  .sectionProjet .containerProjet #modal1 {
+    position: absolute;
+    top: 24%;
+  }
+  .sectionProjet .containerProjet #modal2 {
+    position: absolute;
+    top: 62%;
   }
   .sectionProjet .containerProjet .containerProjet1 {
     min-width: 265px;

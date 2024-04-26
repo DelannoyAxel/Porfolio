@@ -395,7 +395,7 @@ header {
 
     h2 {
         padding: 2% 0% 5% 0%;
-        font-size: 6.5vw;
+        font-size: 5.7vw;
         background: -webkit-linear-gradient(#F9815B, #FFA571);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -418,7 +418,7 @@ header {
     h2 {
         color: white;
         text-align: left;
-        font-size: 6.5vw;
+        font-size: 5.7vw;
         font-style: italic;
         background: -webkit-linear-gradient(#F9815B, #FFA571);
         -webkit-background-clip: text;
@@ -472,6 +472,7 @@ header {
     flex-direction: column;
     height: auto;
     margin: 0px 10%;
+    position: relative;
 
     h1 {
         width: 100%;
@@ -479,112 +480,213 @@ header {
         background: linear-gradient(to right, #F9815B, #FFA571);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 6.5vw;
+        font-size: 5.7vw;
         font-style: italic;
         border-bottom: 2px solid white;
         margin-top: 5%;
     }
+
 
     .containerProjet {
         display: flex;
         gap: 10vh;
         justify-content: center;
         flex-wrap: wrap;
+    }
 
-        .containerProjet1 {
-            width: 35%;
-            min-width: 425px;
-            height: 45vh;
-            margin-top: 10%;
-            border-radius: 15px;
+    .containerProjet1,
+    .containerProjet2 {
+        width: 35%;
+        min-width: 425px;
+        height: 45vh;
+        margin-top: 10%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to right, #F9815B, #FFA571);
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        /* Ajouter cette ligne */
+    }
+
+    .containerProjet1 img,
+    .containerProjet2 img {
+        width: 95%;
+        padding-bottom: 3%;
+        border-radius: 10px;
+        min-width: 400px;
+        height: 30vh;
+    }
+
+    .containerProjet1 h2,
+    .containerProjet2 h2 {
+        color: white;
+        text-align: center;
+    }
+
+    .btnModal {
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+    #modal1,
+    #modal2 {
+        position: absolute;
+        top: 55%;
+        /* Modifier la position pour centrer le modal */
+        left: 50%;
+        /* Modifier la position pour centrer le modal */
+        transform: translate(-50%, -50%);
+        width: 35vw;
+        height: 50%;
+        background-color: rgb(5, 5, 5);
+        border-radius: 35px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        display: none;
+        z-index: 9999;
+    }
+
+    .modal1 {
+
+        div {
             display: flex;
-            flex-direction: column;
-            background: linear-gradient(to right, #F9815B, #FFA571);
-            border-radius: 10px;
-            align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
 
-            img {
-                width: 95%;
-                padding-bottom: 3%;
-                border-radius: 10px;
-                min-width: 400px;
-                height: 30vh;
-
-            }
-
-            h2 {
+            i {
                 color: white;
-                text-align: center;
-
+                font-size: 2vw;
+                cursor: pointer;
             }
 
-            #btnModal1 {
-                text-decoration: none;
-                color: rgb(0, 0, 0);
-                text-align: center;
-
-                i {
-                    font-size: 13px;
-                }
+            i:hover {
+                color: #FFA571;
             }
+        }
 
-            dialog {
-                width: 35vw;
-                height: 40vh;
-                // background-color: pink;
-                // display:flex;
+        h2 {
+            color: white;
+            text-align: center;
+            font-size: 3vw;
+        }
 
-            }
+        h3 {
+            font-size: 1.5vw;
+            color: white;
+            text-align: center;
+            font-weight: lighter;
+            padding-bottom: 5vh;
+        }
 
+        h4 {
+            font-size: 1.3vw;
+            color: white;
+            padding-bottom: 2vh;
+            font-style: italic;
 
         }
 
-        .containerProjet2 {
-            width: 35%;
-            min-width: 425px;
-            height: 45vh;
-            margin-top: 10%;
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(to right, #F9815B, #FFA571);
-            border-radius: 10px;
+        p {
+            color: white;
+            font-size: 0.95vw;
+            padding-bottom: 4vh;
+        }
 
-            img {
-                width: 95%;
-                padding-bottom: 3%;
-                border-radius: 10px;
-                min-width: 400px;
-                height: 30vh;
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+            text-align: center;
+            font-size: 0.8vw;
 
-
-            }
-
-            h2 {
-                color: white;
+            i {
+                font-size: 0.5vw;
                 text-align: center;
             }
 
-            #btnModal2 {
-                text-decoration: none;
-                color: rgb(0, 0, 0);
-                text-align: center;
-
-                i {
-                    font-size: 13px;
-                }
-            }
-
-            dialog {
-                width: 35%;
-                height: 40%;
-                background-color: pink;
-
+            &:hover {
+                color: #FFA571;
             }
         }
+    }
+
+    .modal2 {
+
+        div {
+            display: flex;
+            justify-content: flex-end;
+
+            i {
+                color: white;
+                font-size: 2vw;
+                cursor: pointer;
+            }
+
+            i:hover {
+                color: #FFA571;
+            }
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-size: 3vw;
+        }
+
+        h3 {
+            font-size: 1.5vw;
+            color: white;
+            text-align: center;
+            font-weight: lighter;
+            padding-bottom: 5vh;
+        }
+
+        h4 {
+            font-size: 1.3vw;
+            color: white;
+            padding-bottom: 2vh;
+            font-style: italic;
+
+        }
+
+        p {
+            color: white;
+            font-size: 0.95vw;
+            padding-bottom: 4vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+            text-align: center;
+            font-size: 0.8vw;
+
+            i {
+                font-size: 0.5vw;
+                text-align: center;
+            }
+
+            &:hover {
+                color: #FFA571;
+            }
+        }
+    }
+
+   
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 9998;
+        display: none;
     }
 
     .contact {
@@ -796,12 +898,64 @@ footer {
 
     .sectionProjet {
         .containerProjet {
+            #modal1,
+            #modal2 {
+                width: 60vw;
+                height: 60vh;
+
+                div{
+                    i{
+                        font-size: 3.5vw;
+                    }
+                }
+
+                p{
+                    font-size: 1.7vw;
+                }
+
+                h2{
+                    font-size: 4vw;
+                }
+
+                h3{
+                    font-size: 2vw;
+                }
+
+                h4{
+                    font-size: 2.1vw;
+                }
+
+                a{
+                    font-size: 1.3vw;
+                }
+            }
+
+            #modal1 {
+                position: absolute;
+                top: 30%;
+            }
+
+            #modal2 {
+                position: absolute;
+                top: 69%;
+            }
             .containerProjet1 {
-                width: 60%;
+                width: 60vw;
+                height: 50vh;
+
+                img{
+                    height: 37vh;
+                }
+
             }
 
             .containerProjet2 {
-                width: 60%;
+                width: 60vw;
+                height: 50vh;
+
+                img{
+                    height: 37vh;
+                }
             }
         }
     }
@@ -1110,6 +1264,59 @@ footer {
             background: -webkit-linear-gradient(#F9815B, #FFA571);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .sectionProjet {
+        .containerProjet {
+            #modal1,
+            #modal2 {
+                width: 75vw;
+                height: 50vh;
+
+                div{
+                    i{
+                        font-size: 4vw;
+                    }
+                }
+
+                p{
+                    font-size: 1.7vw;
+                }
+
+                h2{
+                    font-size: 4vw;
+                }
+
+                h3{
+                    font-size: 2vw;
+                }
+
+                h4{
+                    font-size: 2.1vw;
+                }
+
+                a{
+                    font-size: 1.3vw;
+                }
+            }
+
+            #modal1 {
+                position: absolute;
+                top: 26.5%;
+            }
+
+            #modal2 {
+                position: absolute;
+                top: 67%;
+            }
+            .containerProjet1 {
+                width: 70vw;
+            }
+
+            .containerProjet2 {
+                width: 70vw;
+            }
         }
     }
 
@@ -1461,6 +1668,48 @@ footer {
 
     .sectionProjet {
         .containerProjet {
+            #modal1,
+            #modal2 {
+                width: 80vw;
+                height: 37vh;
+
+                div{
+                    i{
+                        font-size: 3.8vw;
+                    }
+                }
+
+                p{
+                    font-size: 2.2vw;
+                    padding-bottom: 1vh;
+                }
+
+                h2{
+                    font-size: 4.5vw;
+                }
+
+                h3{
+                    font-size: 2.5vw;
+                }
+
+                h4{
+                    font-size: 2.7vw;
+                }
+
+                a{
+                    font-size: 1.8vw;
+                }
+            }
+
+            #modal1 {
+                position: absolute;
+                top: 25%;
+            }
+
+            #modal2 {
+                position: absolute;
+                top: 63%;
+            }
             .containerProjet1 {
                 width: 60%;
                 min-width: 325px;
@@ -1475,7 +1724,6 @@ footer {
             }
 
             .containerProjet2 {
-                // width: 60%;
                 min-width: 325px;
                 height: 30vh;
 
@@ -1517,6 +1765,48 @@ footer {
 
     .sectionProjet {
         .containerProjet {
+            #modal1,
+            #modal2 {
+                width: 82vw;
+                height: 37vh;
+
+                div{
+                    i{
+                        font-size: 3.5vw;
+                    }
+                }
+
+                p{
+                    font-size: 2.8vw;
+                    padding-bottom: 1vh;
+                }
+
+                h2{
+                    font-size: 6vw;
+                }
+
+                h3{
+                    font-size: 3vw;
+                }
+
+                h4{
+                    font-size: 3vw;
+                }
+
+                a{
+                    font-size: 2.5vw;
+                }
+            }
+
+            #modal1 {
+                position: absolute;
+                top: 24%;
+            }
+
+            #modal2 {
+                position: absolute;
+                top: 62%;
+            }
             .containerProjet1 {
                 min-width: 265px;
                 height: 30vh;

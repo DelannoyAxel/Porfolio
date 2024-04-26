@@ -149,27 +149,43 @@
     </section>
 
     <section class="sectionProjet" id="sectionProjet">
-        <H1>PROJETS</H1>
-
+        <h1>PROJETS</h1>
+        <div class="overlay" id="overlay"></div>
         <div class="containerProjet">
             <div class="containerProjet1" id="projet1">
                 <img src="img/projet destiny .png" alt="photo du projet">
-                <h2>Destiny of Hereos </h2>
-                <div id="btnModal1">Voir plus <i class="fa-solid fa-arrow-right"></i></div>
-                <dialog>
-                  <p>fghyfjghjghjghjghjgjh</p>
-                </dialog>
+                <h2>Destiny of Heroes</h2>
+                <div class="btnModal" id="btnModal1">Voir plus <i class="fa-solid fa-arrow-right"></i></div>
             </div>
-
+    
             <div class="containerProjet2" id="projet2">
                 <img src="img/projet 2 porfolio.PNG" alt="photo du projet">
-                <h2>Porfolio</h2>
-                <div id="btnModal2">Voir plus <i class="fa-solid fa-arrow-right"></i></div>
-                    <dialog>
-                        <p>fghyfjghjghjghjghjgjh</p>
-                    </dialog>
-                </div>
+                <h2>Portfolio</h2>
+                <div class="btnModal" id="btnModal2">Voir plus <i class="fa-solid fa-arrow-right"></i></div>
             </div>
+    
+            <!-- Modals -->
+            <dialog class="modal1" id="modal1">
+                <div><i class="fa-solid fa-xmark" id="closeModal"></i></div>
+                <h2>Destiny of Heroes</h2>
+                <h3>Projet formation</h3>
+                <h4>Création d'un mini jeu de combat tour par tour.</h4>
+                <p>L'objectif était d'apprendre le JAVASCRIPT,
+                    j'ai crée 4 classes différentes (guerrier, mage, soigneur, archer) avec une séléction de classe pour le player 1 puis le player 2.
+                    Chaque classe  est mise dans un objet. Dans cet objet, il  y a le nombre de points de vie, les points d'attaque...
+                    Une fois qu'un joueur a utilisé une attaque ou une capacité, il doit attendre que  l'adversaire joue.
+                </p>
+                <a href="https://github.com/DelannoyAxel/Destiny-of-Heroes" target="_blank">Voir sur Github <i class="fa-solid fa-arrow-right"></i></a>
+            </dialog>
+    
+            <dialog class="modal1" id="modal2">
+                <div><i class="fa-solid fa-xmark" id="closeModal"></i></div>
+                <h2>Portfolio</h2>
+                <h3>Projet perso</h3>
+                <h4>Création de mon porfolio.</h4>
+                <p>L'objectif est de pouvoir présenter mes projets, mon profil et ce que j'apprends en formation dans le but de trouver un stage conventionné et non rémunéré du 29/07/2024 au 25/10/2024 dans le cadre de ma formation diplomante du TP DWWM.  
+                </p>
+            </dialog>
         </div>
         <div class="contact" id="contact">
             <a href="mailto:delannoy-axel@outlook.fr" class="email-link">
@@ -177,6 +193,8 @@
             </a>
         </div>
     </section>
+    
+    
 
    
 
