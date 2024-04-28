@@ -1051,6 +1051,9 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .sectionProjet h1 {
+    font-size: 7vw;
+  }
   .sectionProjet .containerProjet #modal1,
   .sectionProjet .containerProjet #modal2 {
     width: 75vw;
@@ -1387,6 +1390,9 @@ footer {
     font-size: 3rem;
     color: white;
   }
+  .sectionProjet h1 {
+    font-size: 9vw;
+  }
   .sectionProjet .containerProjet #modal1,
   .sectionProjet .containerProjet #modal2 {
     width: 80vw;
@@ -1428,19 +1434,19 @@ footer {
   .sectionProjet .containerProjet .containerProjet1 {
     width: 60%;
     min-width: 325px;
-    height: 30vh;
+    height: 35vh;
   }
   .sectionProjet .containerProjet .containerProjet1 img {
     min-width: 300px;
-    height: 20vh;
+    height: 23vh;
   }
   .sectionProjet .containerProjet .containerProjet2 {
     min-width: 325px;
-    height: 30vh;
+    height: 35vh;
   }
   .sectionProjet .containerProjet .containerProjet2 img {
     min-width: 300px;
-    height: 20vh;
+    height: 23vh;
   }
   footer {
     height: auto;
@@ -1459,6 +1465,9 @@ footer {
     color: white;
     transition: 0.2s ease-in-out;
     font-size: 2rem;
+  }
+  .sectionProjet h1 {
+    font-size: 11vw;
   }
   .sectionProjet .containerProjet #modal1,
   .sectionProjet .containerProjet #modal2 {
