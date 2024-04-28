@@ -744,6 +744,9 @@ footer {
     font-size: 6em;
     color: white;
   }
+  .sectionProjet h1 {
+    font-size: 8.2vw;
+  }
   .sectionProjet .containerProjet #modal1,
   .sectionProjet .containerProjet #modal2 {
     width: 60vw;
@@ -1404,24 +1407,25 @@ footer {
   }
   .sectionProjet .containerProjet #modal1 p,
   .sectionProjet .containerProjet #modal2 p {
-    font-size: 2.2vw;
+    font-size: 2.5vw;
     padding-bottom: 1vh;
   }
   .sectionProjet .containerProjet #modal1 h2,
   .sectionProjet .containerProjet #modal2 h2 {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
   .sectionProjet .containerProjet #modal1 h3,
   .sectionProjet .containerProjet #modal2 h3 {
-    font-size: 2.5vw;
+    font-size: 3vw;
+    padding-bottom: 1.2vh;
   }
   .sectionProjet .containerProjet #modal1 h4,
   .sectionProjet .containerProjet #modal2 h4 {
-    font-size: 2.7vw;
+    font-size: 3.2vw;
   }
   .sectionProjet .containerProjet #modal1 a,
   .sectionProjet .containerProjet #modal2 a {
-    font-size: 1.8vw;
+    font-size: 2.3vw;
   }
   .sectionProjet .containerProjet #modal1 {
     position: absolute;
@@ -1480,7 +1484,7 @@ footer {
   }
   .sectionProjet .containerProjet #modal1 p,
   .sectionProjet .containerProjet #modal2 p {
-    font-size: 2.8vw;
+    font-size: 3.1vw;
     padding-bottom: 1vh;
   }
   .sectionProjet .containerProjet #modal1 h2,
@@ -1489,15 +1493,16 @@ footer {
   }
   .sectionProjet .containerProjet #modal1 h3,
   .sectionProjet .containerProjet #modal2 h3 {
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
   .sectionProjet .containerProjet #modal1 h4,
   .sectionProjet .containerProjet #modal2 h4 {
-    font-size: 3vw;
+    font-size: 3.2vw;
+    padding-bottom: 1vh;
   }
   .sectionProjet .containerProjet #modal1 a,
   .sectionProjet .containerProjet #modal2 a {
-    font-size: 2.5vw;
+    font-size: 2.7vw;
   }
   .sectionProjet .containerProjet #modal1 {
     position: absolute;
